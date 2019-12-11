@@ -5,12 +5,12 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class DBUtil {
-    public static final String PERSISTENCE_UNIT_NAME = "tasks_content";
+    public static final String PERSISTENCE_UNIT_NAME = "tasks";
 
     public static EntityManagerFactory emf;
 
     public static EntityManager createEntityManager(){
-        return _getEntityManagerFactory().createEntityManager();
+        return _getEntityManagerFactory().createEntityManager();//createEntityManager()がどう作用するかが分からない
     }
 
     public static EntityManagerFactory _getEntityManagerFactory(){
