@@ -3,9 +3,19 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>Insert title here</title>
+        <title>タスクリスト</title>
     </head>
     <body>
-
+        <div id = "wrapper">
+            <div id = "header">
+                <h1>タスクリスト アプリケーション</h1>
+            </div>
+            <div id = "content">
+                ${param.content}
+            </div>
+            <div id = "footer">
+                by Yoshiaki Iwakiri
+            </div>
+        </div>
     </body>
 </html>
