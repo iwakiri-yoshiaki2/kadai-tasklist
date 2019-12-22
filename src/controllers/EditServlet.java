@@ -33,7 +33,7 @@ public class EditServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         EntityManager em = DBUtil.createEntityManager();
 
-        Task t = em.find(Task.class, request.getParameter("id"));
+        Task t = em.find(Task.class, Integer.parseInt(request.getParameter("id")));
 
         em.close();
 
